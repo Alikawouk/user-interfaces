@@ -63,30 +63,7 @@ import { OrganisationService } from '@placeos/organisation';
                             </div>
                         </a>
                     }
-                    @if (features().includes('parking')) {
-                        <a
-                            matRipple
-                            name="footer-nav-parking"
-                            [routerLink]="['/book', 'parking']"
-                            routerLinkActive="active"
-                            class="m-2 flex w-1/3 flex-col items-center justify-center space-y-2 text-base"
-                        >
-                            <div
-                                class="flex h-12 w-12 items-center justify-center rounded-full bg-base-100 text-2xl text-base-content"
-                            >
-                                <icon filled>directions_car</icon>
-                                <icon
-                                    outline
-                                    class="text-neutral"
-                                    className="material-symbols-outlined"
-                                    >directions_car</icon
-                                >
-                            </div>
-                            <div class="text-xs">
-                                {{ 'APP.WORKPLACE.MENU_PARKING' | translate }}
-                            </div>
-                        </a>
-                    }
+
                     @if (features().includes('visitor-invite')) {
                         <a
                             matRipple
