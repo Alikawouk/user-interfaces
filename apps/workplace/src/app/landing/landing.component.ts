@@ -78,7 +78,7 @@ import { RoomAvailabilityService } from '../services/room-availability.service';
                         }}
                     </div>
                     <div date class="px-5 text-sm text-white sm:text-base">
-                        What do you want todo today?
+                        What do you want todo today ?
                     </div>
 
                     <!-- Gauges row -->
