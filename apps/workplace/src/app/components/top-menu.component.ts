@@ -29,7 +29,12 @@ import { OrganisationService } from '@placeos/organisation';
                 class="flex h-full w-full min-w-full items-center justify-center overflow-hidden text-base-content"
             >
                 @for (route of routes; track route) {
-                    @if (features.includes(route.id) || route.id === 'home') {
+                    @if (
+                        features.includes(route.id) ||
+                        route.id === 'home' ||
+                        route.id === 'orientation' ||
+                        route.id === 'deals'
+                    ) {
                         <a
                             matRipple
                             [name]="'nav-' + route.id"
@@ -70,7 +75,12 @@ import { OrganisationService } from '@placeos/organisation';
         }
         <mat-menu #menu="matMenu">
             @for (route of routes; track route) {
-                @if (features.includes(route.id) || route.id === 'home') {
+                @if (
+                    features.includes(route.id) ||
+                    route.id === 'home' ||
+                    route.id === 'orientation' ||
+                    route.id === 'deals'
+                ) {
                     <a
                         mat-menu-item
                         [routerLink]="route.route"
@@ -271,6 +281,18 @@ export class TopMenuComponent
                 route: '/deals-n-offers',
                 icon: 'confirmation_number',
                 name: i18n('APP.WORKPLACE.MENU_DEALS'),
+            },
+            {
+                id: 'orientation',
+                route: '/orientation',
+                icon: 'explore',
+                name: 'orientation',
+            },
+            {
+                id: 'deals',
+                route: '/deals',
+                icon: 'local_offer',
+                name: 'Deals and Offers',
             },
         ];
     }

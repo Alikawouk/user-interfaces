@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import { AppComponent } from 'libs/components/src/lib/app.component';
 
 import { environment } from '../environments/environment';
@@ -30,6 +31,7 @@ import localeIt from '@angular/common/locales/it';
 import localeJa from '@angular/common/locales/ja';
 import localeZh from '@angular/common/locales/zh';
 import { LocaleService } from '@placeos/common';
+import { OrientationComponent } from './orientation/orientation.component';
 
 @NgModule({
     declarations: [AppComponent],
@@ -46,6 +48,7 @@ import { LocaleService } from '@placeos/common';
         SharedOverlaysModule,
         SharedComponentModule,
         SharedBookingsModule,
+        OrientationComponent,
     ],
     providers: [
         provideZonelessChangeDetection(),

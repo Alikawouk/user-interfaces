@@ -5,7 +5,12 @@ import {
     MisconfiguredComponent,
     RedirectComponent,
 } from '@placeos/components';
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import { UnauthorisedComponent } from 'libs/components/src/lib/unauthorised.component';
+import { LandingCustOrientationDetailsComponent } from './landing-cust-orientation-details/landing-cust-orientation-details.component';
+import { LandingDealsComponent } from './landing/landing-deals.component';
+import { LandingOrientationComponent } from './landing/landing-orientation.component';
+import { LandingDealsDetailsComponent } from './landing/landingDealsDetails.component';
 
 const routes: Routes = [
     { path: '-', component: RedirectComponent },
@@ -72,6 +77,31 @@ const routes: Routes = [
         canLoad: [AuthorisedUserGuard],
         loadChildren: () =>
             import('./deals/deals.module').then((m) => m.DealsModule),
+    },
+
+    {
+        path: 'orientation',
+        canActivate: [AuthorisedUserGuard],
+        component: LandingOrientationComponent,
+        canLoad: [AuthorisedUserGuard],
+    },
+    {
+        path: 'landing-cust-orientations/:id',
+        canActivate: [AuthorisedUserGuard],
+        component: LandingCustOrientationDetailsComponent,
+        canLoad: [AuthorisedUserGuard],
+    },
+    {
+        path: 'deals',
+        canActivate: [AuthorisedUserGuard],
+        component: LandingDealsComponent,
+        canLoad: [AuthorisedUserGuard],
+    },
+    {
+        path: 'landing-cust-deals/:id',
+        canActivate: [AuthorisedUserGuard],
+        component: LandingDealsDetailsComponent,
+        canLoad: [AuthorisedUserGuard],
     },
     { path: '**', redirectTo: '-', pathMatch: 'full' },
 ];

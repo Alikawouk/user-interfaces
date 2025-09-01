@@ -1,0 +1,27 @@
+<header class="bg-white">
+    <div class="space-y-4 p-4">
+        <div class="flex items-center justify-center">
+            <h2 class="text-lg font-semibold">Orientation</h2>
+        </div>
+    </div>
+</header>
+
+<div class="space-y-4 p-4">
+    <div
+        *ngFor="let station of stations"
+        class="hover:bg-gray-50 flex cursor-pointer gap-4 rounded-lg bg-white p-2 shadow"
+        (click)="openStation(station.id)"
+    >
+        <div class="relative h-24 w-24 flex-shrink-0">
+            <img
+                [src]="station.image"
+                [alt]="station.name"
+                class="h-full w-full rounded-md object-cover"
+            />
+        </div>
+        <div>
+            <h3 class="font-semibold">{{ station.name }}</h3>
+            <p class="text-gray-600 text-sm">{{ station.shortDescription }}</p>
+        </div>
+    </div>
+</div>
