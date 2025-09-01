@@ -242,12 +242,12 @@ export class TopMenuComponent
                 icon: 'lock',
                 name: i18n('APP.WORKPLACE.MENU_LOCKERS'),
             },
-            {
-                id: 'parking',
-                route: '/book/parking',
-                icon: 'directions_car',
-                name: i18n('APP.WORKPLACE.MENU_PARKING'),
-            },
+            // {
+            //     id: 'parking',
+            //     route: '/book/parking',
+            //     icon: 'directions_car',
+            //     name: i18n('APP.WORKPLACE.MENU_PARKING'),
+            // },
             {
                 id: 'visitor-invite',
                 route: '/book/visitor',
