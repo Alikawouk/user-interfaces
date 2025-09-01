@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { currentUser, SettingsService } from '@placeos/common';
 import { OrganisationService } from '@placeos/organisation';
 import { startOfMinute } from 'date-fns';
-import { interval, switchMap } from 'rxjs';
+import { interval, startWith, switchMap } from 'rxjs';
 import { DeskAvailabilityService } from '../services/deskAvailabilityService';
 import { RoomAvailabilityService } from '../services/room-availability.service';
 
@@ -278,19 +278,18 @@ export class LandingComponent implements OnInit {
             this.bookedRooms = this.totalRooms - this.availableRooms;
         });
 
-        const { start1, end1 } = this.deskService.getTodayPeriod();
+        const { start: start1, end: end1 } = this.deskService.getTodayPeriod();
 
-        // call every 5 seconds
         interval(5000)
             .pipe(
+                startWith(0), // triggers an immediate call
                 switchMap(() => this.deskService.getBookedDesks(start1, end1)),
             )
-            .subscribe((count) => (this.bookedDesks = count));
-
-        // initial call immediately
-        this.deskService
-            .getBookedDesks(start, end)
-            .subscribe((count) => (this.bookedDesks = count));
+            .subscribe((bookedDesks: string[]) => {
+                this.bookedDesks = bookedDesks.length;
+                console.log('Booked desks:', bookedDesks);
+                console.log('Number of booked desks:', bookedDesks.length);
+            });
     }
 
     get roomCircumference() {

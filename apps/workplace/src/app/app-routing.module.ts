@@ -10,6 +10,7 @@ import { UnauthorisedComponent } from 'libs/components/src/lib/unauthorised.comp
 import { LandingCustOrientationDetailsComponent } from './landing-cust-orientation-details/landing-cust-orientation-details.component';
 import { LandingDealsComponent } from './landing/landing-deals.component';
 import { LandingOrientationComponent } from './landing/landing-orientation.component';
+import { LandingParkingComponent } from './landing/landing-parking.component';
 import { LandingDealsDetailsComponent } from './landing/landingDealsDetails.component';
 
 const routes: Routes = [
@@ -101,6 +102,12 @@ const routes: Routes = [
         path: 'landing-cust-deals/:id',
         canActivate: [AuthorisedUserGuard],
         component: LandingDealsDetailsComponent,
+        canLoad: [AuthorisedUserGuard],
+    },
+    {
+        path: 'landing-parking',
+        canActivate: [AuthorisedUserGuard],
+        component: LandingParkingComponent,
         canLoad: [AuthorisedUserGuard],
     },
     { path: '**', redirectTo: '-', pathMatch: 'full' },

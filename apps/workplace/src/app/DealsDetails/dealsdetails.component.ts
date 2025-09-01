@@ -64,7 +64,7 @@ import { DealsOffersService } from '../services/dealoffersService';
                         </header>
                         <!-- Deal Image -->
                         <div class="p-8">
-                            <div class="mb-8">
+                            <div class="h-auto w-full rounded-lg shadow-lg">
                                 <img
                                     [src]="deal.image"
                                     [alt]="deal.name"
@@ -122,6 +122,17 @@ import { DealsOffersService } from '../services/dealoffersService';
                                     Budget
                                 </h3>
                                 <p class="text-gray-700">{{ deal.budget }}</p>
+                            </div>
+                            <!-- Promo Code-->
+                            <div class="mb-6" *ngIf="deal.promoCode">
+                                <h3
+                                    class="text-gray-800 mb-2 text-xl font-semibold"
+                                >
+                                    Promo Code
+                                </h3>
+                                <p class="text-gray-700">
+                                    {{ deal.promoCode }}
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,6 @@ import { OrganisationService } from '@placeos/organisation';
 import { startOfMinute } from 'date-fns';
 import { SharedComponentModule } from '../components/shared.module';
 import { AppLandingModule } from '../landing/landing.module';
-import { OrientationComponent } from '../orientation/orientation.component';
 import { OrientationService } from '../services/orientationsService';
 
 @Component({
@@ -20,7 +19,6 @@ import { OrientationService } from '../services/orientationsService';
     selector: 'landing-cust-orientation-details',
     imports: [
         NgIf,
-        OrientationComponent,
         AppLandingModule, // includes LandingUpcoming, LandingColleagues, etc
         SharedComponentModule,
     ],

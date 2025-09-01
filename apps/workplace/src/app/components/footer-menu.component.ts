@@ -182,7 +182,7 @@ import { OrganisationService } from '@placeos/organisation';
                     <a
                         matRipple
                         name="footer-nav-my-day"
-                        [routerLink]="['/orientation']"
+                        [routerLink]="['/deals']"
                         routerLinkActive="active"
                         class="m-2 flex w-1/3 flex-col items-center justify-center space-y-2 text-base"
                     >
@@ -198,6 +198,26 @@ import { OrganisationService } from '@placeos/organisation';
                             >
                         </div>
                         <div class="text-xs">Deals and Offers</div>
+                    </a>
+                    <a
+                        matRipple
+                        name="footer-nav-my-day"
+                        [routerLink]="['/landing-parking']"
+                        routerLinkActive="active"
+                        class="m-2 flex w-1/3 flex-col items-center justify-center space-y-2 text-base"
+                    >
+                        <div
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-base-100 text-2xl text-base-content"
+                        >
+                            <icon filled>local_activity</icon>
+                            <icon
+                                outline
+                                class="text-neutral"
+                                className="material-symbols-outlined"
+                                >local_parking</icon
+                            >
+                        </div>
+                        <div class="text-xs">Parking</div>
                     </a>
                 </div>
             </div>

@@ -1,18 +1,20 @@
 import { Component, inject } from '@angular/core';
-import { SettingsService } from '@placeos/common';
+import { currentUser, SettingsService } from '@placeos/common';
 import { OrganisationService } from '@placeos/organisation';
-import { currentUser } from '@placeos/ts-client';
 import { startOfMinute } from 'date-fns';
 import { SharedComponentModule } from '../components/shared.module';
-import { DealsandoffersComponent } from '../DealsAndOffers/dealsandoffers.component';
+import { DealsdetailsComponent } from '../DealsDetails/dealsdetails.component';
+import { ParkingComponent } from '../Parking/parking.component';
 import { AppLandingModule } from './landing.module';
 
 @Component({
-    selector: 'placeos-landing-deals',
+    // eslint-disable-next-line @angular-eslint/component-selector
+    selector: 'landing-parking',
     imports: [
         AppLandingModule, // includes LandingUpcoming, LandingColleagues, etc
         SharedComponentModule,
-        DealsandoffersComponent,
+        DealsdetailsComponent,
+        ParkingComponent,
     ],
     template: `
         @if (!hide_nav) {
@@ -80,8 +82,7 @@ import { AppLandingModule } from './landing.module';
                     class="mx-4 mb-2 h-px w-[calc(100%-2rem)] bg-base-200"
                 ></div>
 
-                <!-- <placeos-orientation></placeos-orientation> -->
-                <placeos-dealsandoffers></placeos-dealsandoffers>
+                <placeos-parking></placeos-parking>
             </div>
         </div>
         @if (!hide_nav) {
@@ -108,7 +109,7 @@ import { AppLandingModule } from './landing.module';
     ],
     standalone: true,
 })
-export class LandingDealsComponent {
+export class LandingParkingComponent {
     private _org = inject(OrganisationService);
     private _settings = inject(SettingsService);
 

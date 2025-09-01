@@ -23,13 +23,14 @@ import { DealsOffersService } from './../services/dealoffersService';
                 (click)="openDeal(deal.id)"
             >
                 <!-- Image container -->
+
                 <div
-                    class="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-xl"
+                    class="bg-gray-100 relative flex h-24 w-24 flex-shrink-0 items-center justify-center"
                 >
                     <img
                         [src]="deal.image"
                         [alt]="deal.name"
-                        class="h-full w-full object-cover object-center transition-transform duration-200 hover:scale-105"
+                        class="max-h-full max-w-full rounded-md object-contain"
                     />
                 </div>
 
@@ -38,8 +39,18 @@ import { DealsOffersService } from './../services/dealoffersService';
                     <h3 class="text-gray-800 truncate text-lg font-semibold">
                         {{ deal.name }}
                     </h3>
-                    <p class="text-gray-600 line-clamp-2 text-sm">
-                        {{ deal.shortDescription }}
+                    <p class="text-gray-500 mt-1 text-xs">
+                        <span>Discount: {{ deal.discount }} </span> <br />
+
+                        <span *ngIf="deal.open"> Open: {{ deal.open }} </span>
+                        <br />
+                        <span *ngIf="deal.budget">{{ deal.budget }}</span>
+                        <br />
+                        <span>Contact: {{ deal.contact }}</span>
+                        <br />
+                        <span *nfIf="deal.prmoCode"
+                            >Promo Code: {{ deal.promoCode }}</span
+                        >
                     </p>
                 </div>
             </div>

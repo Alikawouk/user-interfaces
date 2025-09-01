@@ -33,7 +33,8 @@ import { OrganisationService } from '@placeos/organisation';
                         features.includes(route.id) ||
                         route.id === 'home' ||
                         route.id === 'orientation' ||
-                        route.id === 'deals'
+                        route.id === 'deals' ||
+                        route.id === 'parking-landing'
                     ) {
                         <a
                             matRipple
@@ -79,7 +80,8 @@ import { OrganisationService } from '@placeos/organisation';
                     features.includes(route.id) ||
                     route.id === 'home' ||
                     route.id === 'orientation' ||
-                    route.id === 'deals'
+                    route.id === 'deals' ||
+                    route.id === 'parking-landing'
                 ) {
                     <a
                         mat-menu-item
@@ -293,6 +295,12 @@ export class TopMenuComponent
                 route: '/deals',
                 icon: 'local_offer',
                 name: 'Deals and Offers',
+            },
+            {
+                id: 'parking-landing',
+                route: '/landing-parking',
+                icon: 'local_parking',
+                name: 'Parking',
             },
         ];
     }
