@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;e0abaa33836e11e9884ebb76a9ba1496ebe025201e47e5fbafc8bf29d7b7cf09;/home/runner/work/user-interfaces/user-interfaces/libs/catering/src/lib/catering-order-modal/catering-item-filters.component.ts"],
+  "sourcesContent": ["\n            :host {\n                min-width: 16rem;\n                overflow: auto;\n            }\n        "],
+  "mappings": "AACY,MACI,UAAW,MACX,SAAU,IACd",
+  "names": []
+}
