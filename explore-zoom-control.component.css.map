@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;3d42ea289b866ee23d2075663b931fa5501aa5a1e18f8af721ddfffbd945ad48;/home/runner/work/user-interfaces/user-interfaces/libs/explore/src/lib/explore-zoom-control.component.ts"],
+  "sourcesContent": ["\n            :host {\n                display: flex;\n                flex-direction: column;\n            }\n\n            button {\n                border: 1px solid #9998;\n                border-radius: 0;\n            }\n\n            button:first-child {\n                border-radius: 0.25rem 0.25rem 0 0;\n                border-bottom: none;\n            }\n\n            button:last-child {\n                border-radius: 0 0 0.25rem 0.25rem;\n                border-top: none;\n            }\n        "],
+  "mappings": "AACY,MACI,QAAS,KACT,eAAgB,MACpB,CAEA,OACI,OAAQ,IAAI,MAAM,MAPlC,cAQ+B,CACnB,CAEA,MAAM,aAXlB,cAY+B,OAAQ,OAAQ,EAAE,EACjC,cAAe,IACnB,CAEA,MAAM,YAhBlB,cAiB+B,EAAE,EAAE,OAAQ,OAC3B,WAAY,IAChB",
+  "names": []
+}

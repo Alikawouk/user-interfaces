@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;a06df7e621aef1a8e37f27538bd827f318d299b81e71a664b59cedd72ad336cf;/home/runner/work/user-interfaces/user-interfaces/apps/workplace/src/app/components/top-menu.component.ts"],
+  "sourcesContent": ["\n            [menu] > * {\n                height: 3.5rem;\n                flex-shrink: 1;\n            }\n\n            [bar] {\n                display: none;\n            }\n\n            .active > [bar] {\n                display: block;\n            }\n\n            a:not([mat-menu-item]):not(.active) {\n                opacity: 0.6;\n            }\n\n            a:not([mat-menu-item]):not(.active):hover {\n                border-radius: 0.5rem;\n                margin-top: 0.25rem;\n                margin-bottom: 0.25rem;\n                height: 3rem;\n\n                background-color: var(--b2);\n                opacity: 0.4;\n            }\n\n            a:not(.active) [filled],\n            a.active [outline] {\n                display: none;\n            }\n        "],
+  "mappings": "AACY,CAAC,KAAM,CAAE,EACL,OAAQ,OACR,YAAa,CACjB,CAEA,CAAC,KACG,QAAS,IACb,CAEA,CAAC,MAAO,CAAE,CAAC,KACP,QAAS,KACb,CAEA,CAAC,KAAK,CAAC,eAAe,KAAK,CAJ1B,QAKG,QAAS,EACb,CAEA,CAAC,KAAK,CAAC,eAAe,KAAK,CAR1B,OAQkC,OAlB/C,cAmB+B,MACf,WAAY,OACZ,cAAe,OACf,OAAQ,KAER,iBAAkB,IAAI,MACtB,QAAS,EACb,CAEA,CAAC,KAAK,CAlBL,QAkBc,CAAC,QAChB,CAAC,CAnBA,OAmBQ,CAAC,SACN,QAAS,IACb",
+  "names": []
+}

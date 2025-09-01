@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;3bb3506311e2f81f4817a1c5fa8c112f6275291d25aef41ce24b97b73f7ea17b;/home/runner/work/user-interfaces/user-interfaces/libs/explore/src/lib/explore-desk-info.component.ts"],
+  "sourcesContent": ["\n            .triangle {\n                width: 0px;\n                height: 0px;\n                border-style: solid;\n                border-width: 0.5rem 0.5rem 0 0;\n                border-color: currentColor transparent transparent transparent;\n                transform: rotate(0deg);\n            }\n\n            [status] {\n                background-color: var(--su);\n                color: var(--suc);\n            }\n\n            [status].busy {\n                background-color: var(--er);\n                color: var(--erc);\n            }\n\n            [status].pending {\n                background-color: var(--wa);\n                color: var(--wac);\n            }\n\n            [status].not-bookable {\n                background-color: var(--b3);\n            }\n        "],
+  "mappings": "AACY,CAAC,SACG,MAAO,IACP,OAAQ,IACR,aAAc,MACd,aAAc,MAAO,MAAO,EAAE,EAC9B,aAAc,aAAa,YAAY,YAAY,YACnD,UAAW,OAAO,EACtB,CAEA,CAAC,QACG,iBAAkB,IAAI,MACtB,MAAO,IAAI,MACf,CAEA,CAAC,OAAO,CAAC,KACL,iBAAkB,IAAI,MACtB,MAAO,IAAI,MACf,CAEA,CAAC,OAAO,CAAC,QACL,iBAAkB,IAAI,MACtB,MAAO,IAAI,MACf,CAEA,CAAC,OAAO,CAAC,aACL,iBAAkB,IAAI,KAC1B",
+  "names": []
+}

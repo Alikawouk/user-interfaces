@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["apps/workplace/src/app/landing-cust-orientation-details/landing-cust-orientation-details.component.css"],
+  "sourcesContent": [":host {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    overflow: hidden;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\nmain {\r\n    min-height: 50%;\r\n}\r\n"],
+  "mappings": "AAAA,MACI,SAAU,SACV,MAAK,EAIL,SAAU,OACV,QAAS,KACT,eAAgB,MACpB,CAEA,KACI,WAAY,GAChB",
+  "names": []
+}

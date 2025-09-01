@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;1a40978879ad8478d3ab6981d05c143f420a3248c347db3fa9c25fd796429357;/home/runner/work/user-interfaces/user-interfaces/apps/workplace/src/app/landing/landingDealsDetails.component.ts"],
+  "sourcesContent": ["\n            :host {\n                position: absolute;\n                top: 0;\n                left: 0;\n                right: 0;\n                bottom: 0;\n                overflow: hidden;\n                display: flex;\n                flex-direction: column;\n                background-color: white;\n            }\n\n            main {\n                min-height: 50%;\n            }\n        "],
+  "mappings": "AACY,MACI,SAAU,SACV,MAAK,EAIL,SAAU,OACV,QAAS,KACT,eAAgB,OAChB,iBAAkB,IACtB,CAEA,KACI,WAAY,GAChB",
+  "names": []
+}
