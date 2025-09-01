@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;5c04361388d35df81bba08d5f28fa26d467424d6614f6aa9de2da6eea3b253d6;/home/runner/work/user-interfaces/user-interfaces/libs/users/src/lib/user-label.component.ts"],
+  "sourcesContent": ["\n            :host {\n                font-size: 1cm;\n            }\n\n            .user-label.portrait {\n                width: 25rem;\n                height: 15rem;\n            }\n\n            .user-label.landscape {\n                width: 15rem;\n                height: 25rem;\n            }\n        "],
+  "mappings": "AACY,MACI,UAAW,GACf,CAEA,CAAC,UAAU,CAAC,SACR,MAAO,MACP,OAAQ,KACZ,CAEA,CALC,UAKU,CAAC,UACR,MAAO,MACP,OAAQ,KACZ",
+  "names": []
+}

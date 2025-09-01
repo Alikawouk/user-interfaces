@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;e381128d69126a921f795d23dd678a1a307cb823de6f338c797cf6c1bba2f30f;/home/runner/work/user-interfaces/user-interfaces/apps/concierge/src/app/reports/reports.component.ts"],
+  "sourcesContent": ["\n            :host {\n                display: flex;\n                flex-direction: column;\n                height: 100%;\n                width: 100%;\n                background-color: var(--b1);\n            }\n\n            main > *:not(router-outlet) {\n                display: flex;\n                flex-direction: column;\n                width: 100%;\n                height: 100%;\n            }\n        "],
+  "mappings": "AACY,MACI,QAAS,KACT,eAAgB,OAChB,OAAQ,KACR,MAAO,KACP,iBAAkB,IAAI,KAC1B,CAEA,IAAK,CAAE,CAAC,KAAK,eACT,QAAS,KACT,eAAgB,OAChB,MAAO,KACP,OAAQ,IACZ",
+  "names": []
+}
