@@ -11,7 +11,7 @@ import { ParkingService } from '../services/parkingService';
         <header class="bg-white">
             <div class="space-y-4 p-4">
                 <div class="flex items-center justify-center">
-                    <h2 class="text-xl font-bold">Deals & Offers</h2>
+                    <h2 class="text-xl font-bold">Parking Locations</h2>
                 </div>
             </div>
         </header>
@@ -20,6 +20,7 @@ import { ParkingService } from '../services/parkingService';
             <div
                 *ngFor="let p of pakingsLocation"
                 class="hover:bg-gray-50 animate-fade-in flex cursor-pointer gap-4 rounded-2xl bg-white p-4 shadow-md transition hover:shadow-lg"
+                (click)="goToMap(p.link)"
             >
                 <!-- Image container -->
                 <div
@@ -50,5 +51,8 @@ export class ParkingComponent implements OnInit {
 
     ngOnInit(): void {
         this.pakingsLocation = this.parkingService.getParkings();
+    }
+    goToMap(link: string) {
+        window.open(link);
     }
 }
